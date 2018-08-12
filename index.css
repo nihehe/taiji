@@ -1,0 +1,40 @@
+body{
+    background: #ccc;
+}
+div{
+    width: 100px;
+    height: 200px;
+    background: #fff;
+    margin: 100px auto;
+    border-right: 100px solid #000;
+    border-radius: 50%;
+    position: relative;
+    transition: all 15s;
+}
+div:hover{
+    transform: rotate(3600deg);
+}
+div:before{
+    content: " ";
+    display: block;
+    width:40px;
+    height: 40px;
+    background: #000;
+    border: 30px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+div:after{
+    content: " ";
+    display: block;
+    width:40px;
+    height: 40px;
+    background: #fff;
+    border: 30px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
